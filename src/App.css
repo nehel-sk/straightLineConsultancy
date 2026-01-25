@@ -1,0 +1,8 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+}
