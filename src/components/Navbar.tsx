@@ -3,13 +3,12 @@ import { Menu, X, Shield } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false)
-
-  const scrollTo = (id)=>{
-    setIsOpen(false)
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-  }
+  const scrollTo = (id) => {
+    setIsOpen(false);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="sticky bg-primary absolute top-0 left-0 w-full z-20">
@@ -56,7 +55,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile View Menu Button */}
-        
+
         <Button
           size="sm"
           className="hidden sm:inline-flex bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-lg"
@@ -78,39 +77,40 @@ const Navbar = () => {
         </button>
 
         {/* Mobile Menu */}
-        {isOpen &&
-          <div className="md:hidden bg-primary text-primary-foreground px-4 py-6 flex flex-col gap-4">
-          <a
-            role="button"
-            className="hover:text-primary transition"
-            onClick={() => scrollTo("services")}
-          >
-            Services
-          </a>
-          <a
-            role="button"
-            className="hover:text-primary transition"
-            onClick={() => scrollTo("whyUs")}
-          >
-            Why us
-          </a>
-          <a
-            role="button"
-            className="hover:text-primary transition"
-            onClick={() => scrollTo("process")}
-          >
-            Our Process
-          </a>
-          <a
-            role="button"
-            className="hover:text-primary transition"
-            onClick={() => scrollTo("contact")}
-          >
-            Contact
-          </a>
-        </div> 
-        }
-
+        {isOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-primary text-primary-foreground px-4 py-6 flex flex-col gap-4">
+            <div className="px-4 py-6 flex flex-col gap-4">
+              <a
+                role="button"
+                className="hover:text-primary transition flex justify-end"
+                onClick={() => scrollTo("services")}
+              >
+                Services
+              </a>
+              <a
+                role="button"
+                className="hover:text-primary transition flex justify-end"
+                onClick={() => scrollTo("whyUs")}
+              >
+                Why us
+              </a>
+              <a
+                role="button"
+                className="hover:text-primary transition flex justify-end"
+                onClick={() => scrollTo("process")}
+              >
+                Our Process
+              </a>
+              <a
+                role="button"
+                className="hover:text-primary transition flex justify-end"
+                onClick={() => scrollTo("contact")}
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
