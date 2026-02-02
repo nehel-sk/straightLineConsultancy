@@ -13,14 +13,18 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-foreground rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
       </div>
-
+      {/* <Navbar /> */}
       <div className="container mx-auto px-4 py-16 relative z-10">
+        
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
+          {/* <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Shield className="w-4 h-4 text-primary-foreground" />
             <span className="text-primary-foreground text-sm font-medium">Trusted by 1000+ Businesses</span>
+            <div className="text-primary-foreground font-bold text-xl">
+            Straight<span className="text-accent">Line</span>
           </div>
+          </div> */}
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -47,7 +51,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
               size="lg"
               variant="outline"
               onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6 rounded-xl transition-all duration-300"
+              className="border-2 border-primary-foreground/30 text-primary-foreground text-primary hover:bg-primary-foreground/10 text-lg px-8 py-6 rounded-xl transition-all duration-300"
             >
               View Services
             </Button>

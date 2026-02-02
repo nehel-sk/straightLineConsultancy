@@ -25,7 +25,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="process" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

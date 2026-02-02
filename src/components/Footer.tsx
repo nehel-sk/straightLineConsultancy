@@ -5,12 +5,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo / Brand */}
           <div className="text-primary-foreground font-bold text-xl">
-            RegEase<span className="text-accent">Pro</span>
+            Straight<span className="text-accent">Line</span>
           </div>
 
           {/* Copyright */}
           <p className="text-muted text-sm text-center">
-            © {new Date().getFullYear()} RegEase Pro. All rights reserved.
+            © {new Date().getFullYear()} StraightLine. All rights reserved.
           </p>
 
           {/* Links */}

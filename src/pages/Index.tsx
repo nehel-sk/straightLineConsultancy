@@ -6,6 +6,7 @@ import ProcessSection from "@/components/ProcessSection";
 import ContactSection from "@/components/ContactSection";
 import EnquiryForm from "@/components/EnquiryForm";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -23,6 +24,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar/>
       <HeroSection onGetStarted={handleGetStarted} />
       <ServicesSection onSelectService={handleSelectService} />
       <WhyChooseUsSection />
