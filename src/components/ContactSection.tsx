@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
-  const phoneNumber = "+918281527731";
-  const whatsappNumber = "918281527731";
+  const phoneNumber = "+91123456789";
+  const whatsappNumber = "91123456789";
   const email = "info@regeasepro.com";
 
   const handleWhatsApp = () => {
