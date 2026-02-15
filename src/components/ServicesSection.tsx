@@ -61,21 +61,21 @@ const ServicesSection = ({ onSelectService }: ServicesSectionProps) => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:w-[80%] md:grid-cols-2 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-4">
           {services.map((service, index) => (
             <Card
               key={service.title}
               className="group border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 bg-card animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+              <CardHeader className="p-4">
+                <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-foreground">{service.title}</CardTitle>
                 <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 pt-0">
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -84,12 +84,12 @@ const ServicesSection = ({ onSelectService }: ServicesSectionProps) => {
                     </li>
                   ))}
                 </ul>
-                <Button
+                {/* <Button
                   onClick={() => onSelectService(service.title)}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
                   Apply Now
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}
