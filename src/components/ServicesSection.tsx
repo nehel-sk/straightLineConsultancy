@@ -61,7 +61,7 @@ const ServicesSection = ({ onSelectService }: ServicesSectionProps) => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:w-[80%] md:grid-cols-2 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-4">
+        <div className="grid grid-cols-1 md:w-[80%] md:grid-cols-2 lg:grid-cols-3 lg:max-w-4xl mx-auto gap-8">
           {services.map((service, index) => (
             <Card
               key={service.title}

@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
-  const phoneNumber = "+919876543210";
-  const whatsappNumber = "919876543210";
+  const phoneNumber = "+918281527731";
+  const whatsappNumber = "918281527731";
   const email = "info@regeasepro.com";
 
   const handleWhatsApp = () => {
@@ -41,7 +41,7 @@ const ContactSection = () => {
                 <Phone className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-primary-foreground font-semibold mb-1">Call Us</h3>
-              <p className="text-primary-foreground/80 text-sm">+91 98765 43210</p>
+              <p className="text-primary-foreground/80 text-sm">+91 123456789</p>
             </button>
 
             <button
@@ -63,7 +63,7 @@ const ContactSection = () => {
                 <Mail className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-primary-foreground font-semibold mb-1">Email Us</h3>
-              <p className="text-primary-foreground/80 text-sm">info@regeasepro.com</p>
+              <p className="text-primary-foreground/80 text-sm">straightline@info.com</p>
             </button>
           </div>
 
