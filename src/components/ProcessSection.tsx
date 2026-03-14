@@ -29,11 +29,13 @@ const ProcessSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">How It Works</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <span className="inline-block text-primary font-bold text-sm uppercase tracking-widest mb-4 bg-primary/10 px-4 py-1.5 rounded-full">
+            How It Works
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Simple 4-Step Process
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
             Get your registration done in just a few simple steps with our streamlined process.
           </p>
         </div>
@@ -68,7 +70,7 @@ const ProcessSection = () => {
 
         {/* Completion Badge */}
         <div className="flex justify-center mt-12">
-          <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full font-bold">
             <CheckCircle2 className="w-5 h-5" />
             <span className="font-medium">100% Compliance Guaranteed</span>
           </div>

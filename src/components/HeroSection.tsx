@@ -1,5 +1,6 @@
 import { ArrowRight, Shield, Clock, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import bannerImage from "@/assets/banner.png";
 
 interface HeroSectionProps {
   onGetStarted: () => void;
@@ -7,14 +8,25 @@ interface HeroSectionProps {
 
 const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary via-primary to-accent overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
+      {/* Background Image Wrapper */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={bannerImage} 
+          alt="Business Consulting Background" 
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Dark overlay for text readability - Neutral Slate */}
+        <div className="absolute inset-0 bg-slate-900/60" />
+      </div>
+      
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-foreground rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
+      <div className="absolute inset-0 z-0 opacity-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
       </div>
       {/* <Navbar /> */}
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 pt-32 pb-16 relative z-10 flex flex-col items-center">
         
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
@@ -42,7 +54,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             <Button
               size="lg"
               onClick={onGetStarted}
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-slate-100 hover:bg-slate-200 text-primary text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group font-bold"
             >
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
