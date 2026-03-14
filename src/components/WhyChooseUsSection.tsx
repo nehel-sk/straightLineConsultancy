@@ -29,11 +29,13 @@ const WhyChooseUsSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">Why Choose Us</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <span className="inline-block text-primary font-bold text-sm uppercase tracking-widest mb-4 bg-primary/10 px-4 py-1.5 rounded-full">
+            Why Choose Us
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
             Trusted by Thousands of Businesses
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
             We combine expertise, efficiency, and transparency to deliver seamless registration services.
           </p>
         </div>
